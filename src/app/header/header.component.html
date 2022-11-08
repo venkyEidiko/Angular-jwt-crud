@@ -1,0 +1,20 @@
+<header>
+  <nav class ="navbar navbar-expand  bg-primary">
+  
+  <div  ><a href="#" class="navbar-brand"><img style="width: 15rem; height: 4rem;" src="https://www.mlritm.ac.in/assets/images/mlrs_logo.png" /></a></div>
+  <div style="font-weight: 150px ;font-family: Georgia, 'Times New Roman', Times, serif; color: whitesmoke; font-size: 15px; border-radius: 10px; "   >Marri Laxman Reddy Institute of Technology and Management </div>
+  
+  
+  <ul class="navbar-nav">
+    <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="" class="nav-link"> <small style="  font-weight: bold ; font-family: Verdana, Geneva, Tahoma, sans-serif  ;font-size: 14px; color: rgb(7, 7, 7)" > Home </small> </a></li>
+    <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="viewall" class="nav-link"> <small style="  font-weight: bold ; font-family: Verdana, Geneva, Tahoma, sans-serif  ;font-size: 14px; color: rgb(7, 7, 7)" > View Employees </small> </a></li>
+    <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/addemployee" class="nav-link"> <small style="  font-weight: bold ; font-family: Verdana, Geneva, Tahoma, sans-serif  ;font-size: 14px; color: rgb(7, 7, 7)" > Add New Employee </small> </a></li>
+    <li><a *ngIf="!loginService.isUserLoggedIn()" routerLink="/login" class="nav-link"> <small style="  font-weight: bold ; font-family: Verdana, Geneva, Tahoma, sans-serif  ;font-size: 14px; color: rgb(7, 7, 7)" > Login </small> </a></li>
+    <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/logout" class="nav-link"> <small style="  font-weight: bold ; font-family: Verdana, Geneva, Tahoma, sans-serif  ;font-size: 14px; color: rgb(7, 7, 7)" > LogOut </small> </a></li>
+  
+  
+  </ul>
+  
+  </nav>
+  
+  </header>
